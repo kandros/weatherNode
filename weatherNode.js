@@ -10,7 +10,7 @@ http.get(url, function(res) {
   });
   res.on("end", function(){
     var jsonresult = JSON.parse(body);
-    console.log("Temperatura attuale a" + luogo + " : " + jsonresult.main.temp + "°C");
+    console.log("Temperatura attuale a " + luogo + " : " + jsonresult.main.temp + "°C");
   });
 });
 
